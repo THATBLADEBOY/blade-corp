@@ -1,5 +1,5 @@
-import { HeroCentredWithImage } from "@repo/ui/marketing";
-import { DarkModeToggle } from "@repo/ui/darkModeToggle";
+import { HeroCentredWithImage } from "@bladecorp/ui/marketing";
+import { DarkModeToggle } from "@bladecorp/ui/darkModeToggle";
 
 export default function Page(): JSX.Element {
   return (
