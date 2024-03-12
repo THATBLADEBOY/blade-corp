@@ -11,4 +11,4 @@ The monorepo is structured as follows:
 
 ## Packages
 
-- `@bladecorp/ui` - A collection of React components that can be used to build UIs. Lots of the components at least started with [shadcn ui](ui.shadcn.com) as a base.
+- `@blade/ui` - A collection of React components that can be used to build UIs. Lots of the components at least started with [shadcn ui](ui.shadcn.com) as a base.

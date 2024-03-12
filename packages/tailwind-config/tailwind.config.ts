@@ -1,11 +1,16 @@
 import type { Config } from "tailwindcss";
-// @ts-expect-error - tailwindcss-animate is not typed
 import tailwindcssAnimate from "tailwindcss-animate";
-import { fontFamily } from "tailwindcss/defaultTheme";
 
-const config: Omit<Config, "content"> = {
+const config: Config = {
   darkMode: ["class"],
-  // content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "../../packages/ui/src/**/*.{ts,tsx}",
+  ],
+  prefix: "",
   theme: {
     container: {
       center: true,
@@ -51,12 +56,9 @@ const config: Omit<Config, "content"> = {
         },
       },
       borderRadius: {
-        lg: `var(--radius)`,
-        md: `calc(var(--radius) - 2px)`,
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-      },
-      fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       keyframes: {
         "accordion-down": {
@@ -75,6 +77,6 @@ const config: Omit<Config, "content"> = {
     },
   },
   plugins: [tailwindcssAnimate],
-}
+};
 
 export default config;

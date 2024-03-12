@@ -1,5 +1,5 @@
 {
-  "extends": "@bladecorp/typescript-config/react-library.json",
+  "extends": "@blade/typescript-config/react-library.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

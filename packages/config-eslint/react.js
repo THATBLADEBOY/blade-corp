@@ -1,4 +1,4 @@
-const { resolve } = require("node:path");
+import { resolve } from "node:path";
 
 const project = resolve(process.cwd(), "tsconfig.json");
 
@@ -13,7 +13,7 @@ const project = resolve(process.cwd(), "tsconfig.json");
  */
 
 /** @type {import("eslint").Linter.Config} */
-module.exports = {
+export default {
   extends: ["eslint:recommended", "prettier", "eslint-config-turbo"],
   plugins: ["only-warn"],
   globals: {

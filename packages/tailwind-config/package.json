@@ -1,12 +1,14 @@
 {
-  "name": "@bladecorp/tailwind-config",
+  "name": "@blade/tailwind-config",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "exports": {
     ".": "./tailwind.config.ts"
   },
   "devDependencies": {
-    "@bladecorp/typescript-config": "workspace:*",
-    "tailwindcss": "^3.4.1"
+    "@blade/typescript-config": "workspace:*",
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7"
   }
 }
